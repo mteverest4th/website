@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+      <script src="https://kit.fontawesome.com/0bbf47f20a.js" crossorigin="anonymous"></script>
+      
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      
+      <link rel="stylesheet" href="style/fonts.css">
+      <link rel="stylesheet" href="style/navigation.css">
+      <link rel="stylesheet" href="style/mediaQuery.css">
+      <link rel="stylesheet" href="style/main.css">
+      <link rel="stylesheet" href="style/footer.css">
+      
+
+      <title>Mt.Everest 4th Nails &amp; Spa</title>
+      
+      <style>
+/*
+          .footer{
+              position: absolute;
+              bottom: 0;
+          }
+*/
+          .main-wrap{
+              max-width: 1500px;
+              margin: auto;
+          }
+          .container-fluid h2{
+              font-size: 2em;
+              font-family: 'Cormorant Garamond', serif;
+              padding-left: 10px;
+              padding-top: 20px;
+          }
+          .col-sm-9{
+              padding-top: 20px;
+          }
+          .col-sm-9 p{
+              text-align: left;
+              font-size: 1.4em;
+              color: rgba(0,0,0,.6);
+          }
+          body{
+/*              background-color: rgba(37,40,39,1.0);*/
+          }
+          .services{
+              padding: 30px;
+          }
+          .service-wrap{
+/*              background-color: gainsboro;*/
+/*              background-color: rgba(37,40,39,.8);*/
+              padding: 30px;
+              border-radius: 10px;
+              font-size: 1.1em;
+              font-family: 'Cormorant Garamond', serif;
+          }
+/*
+          .banner-wrap{
+              width: 100%;
+              margin: auto;
+              height: 20vh;
+              text-align: center;
+              border-radius: 10px;
+              letter-spacing: .09em;
+              font-size: 1.1em;
+              font-family: 'Cormorant Garamond', serif;
+          }
+          .nails{
+              background-image: url(images/nail-services.jpg);
+              background-position: center;
+              background-size: cover;
+          }
+          .pedicure{
+              background-image: url(images/pedicure.jpg);
+              background-position: center;
+              background-size: cover;
+          }
+          .waxing{
+              background-image: url(images/waxing.jpg);
+              background-position: center;
+              background-size: cover;
+          }
+          .threading{
+              background-image: url(images/threading.jpg);
+              background-position: center;
+              background-size: cover;
+          }
+          .massage{
+              background-image: url(images/stonemassage.png);
+              background-position: center;
+              background-size: cover;
+          }
+          .facial{
+              background-image: url(images/facial.jpg);
+              background-position: center;
+              background-size: cover;
+          }
+          .banner-wrap .overlay{
+              border-radius: 10px;
+          }
+          .banner-wrap h1{
+              position: relative;
+              top: 50%;
+              transform: translateY(-50%);
+              color: #fff;
+          }
+*/
+          .service-card{margin: 10px;margin-left: 0;margin-right: 0;}
+          .service-card .overlay{
+              width: 100%;
+              height: 100%;
+              background-color: rgba(0,0,0,.4);
+              border-top-left-radius: 10px;
+              border-top-right-radius: 10px;
+          }
+          .service-content{
+              padding: 20px;
+/*              background-color: rgba(37,40,39,.8);*/
+              background-color: gainsboro;
+              border-bottom-left-radius: 10px;
+              border-bottom-right-radius: 10px;
+          }
+          .service-content p{
+              color: rgba(37,40,39,.8);
+              margin-bottom: 20px;
+          }
+          .service-content button{
+              position: relative;
+              left: 50%;
+              transform: translateX(-50%);
+              border: .5px solid #000;
+              background-color: #000;
+              color: rgba(229,203,177,1.0);
+              transition: .4s;
+              position: relative;
+              left: 50%;
+              transform: translateX(-50%);
+              outline: none;
+          }
+          .service-content button:hover{
+              color: #000;
+              background-color: #fff;
+              border: .5px solid rgba(229,203,177,1.0);
+              cursor: pointer;
+              transition: .4s;
+          }
+          .container-wrap{
+              padding: 20px;
+          }
+          .banner-image{
+              width: 100%;
+              height: 200px;
+              background-position: center;
+              background-size: cover;
+              border-top-left-radius: 10px;
+              border-top-right-radius: 10px;
+          }
+          .nails .banner-image{
+              background-image: url(images/nail-services.jpg);
+          }
+          .pedicure .banner-image{
+              background-image: url(images/pedicure.jpg);
+          }
+          .waxing .banner-image{
+              background-image: url(images/waxing.jpg);
+          }
+          .threading .banner-image{
+              background-image: url(images/threading.jpg);
+          }
+          .massage .banner-image{
+              background-image: url(images/stonemassage.png);
+          }
+          .facial .banner-image{
+              background-image: url(images/facial.jpg);
+          }
+          .overlay h1{
+              position: relative;
+              top: 50%;
+              transform: translateY(-50%);
+              color: rgba(255,255,255,.8);
+              text-align: center;
+              font-family: 'Petit Formal Script', cursive;
+          }
+          ul{
+              width: 80%;
+              margin: 20px auto;
+              padding: 0px;
+              display: none;
+          }
+          ul li:first-child{
+              border-top: 1px solid rgba(0,0,0,.1);
+          }
+          ul li{
+              font-size: 1.1em;
+              font-family: 'Cormorant Garamond', serif;
+              margin: 0;
+              padding: 0;
+              list-style: none;
+              color: rgba(37,40,39,.8);
+              border-bottom: 1px solid rgba(0,0,0,.1);
+              padding: 5px;
+          }
+          p span{
+              font-family: 'Julius Sans One', sans-serif;
+          }
+          @media (max-width: 1000px){   
+              .footer{
+                  position: relative;
+              }
+          }
+          @media (max-height: 1150px){
+              
+              .footer{
+                  position: relative;
+              }
+          }
+          @media only screen and (min-height: 850px){
+              
+              
+          }
+      </style>
+  </head>
+  <body>
+      <div class="scroll-top" id="topScroll">
+          <i class="fas fa-chevron-up"></i>
+      </div>
+      <header>
+          <img class="open-menu" src="images/menu.png">
+          <a href="index.html">
+          <div class="logo">
+              <div class="text-logo">
+                  <h1>Mt.Everest 4<sup>th</sup></h1>
+                  <h6><img src="./images/nailpolish.png" style="margin-right: 10px;">Nail &amp; Spa<img style="margin-left: 10px;transform: rotate(-140deg);" src="./images/nailpolish.png"></h6>
+              </div>
+          </div>
+          </a>
+          <nav>
+              <div class="main-nav">
+                  <a href="index.html">Home</a>
+                  <a href="about.html">About</a>
+                  <a href="menu.html" class="active">Menu</a>
+                  <a href="contact.html">Contact</a>
+              </div>
+              <div class="mobile-nav">
+                  <img class="close-menu" src="images/cross.png">
+                  <div class="mobile-center">
+                      <a href="index.html">Home</a>
+                      <a href="about.html">About</a>
+                      <a href="menu.html" class="active">Menu</a>
+                      <a href="contact.html">Contact</a>
+                  </div>
+              </div>
+          </nav>
+      </header>
+      <div class="main-wrap">
+          <div class="container-fluid">
+          <div class="row">
+              <div class="col-sm-3"><h2>Our Menu</h2></div>
+              <div class="col-sm-9">
+                  <p>
+                      You can drop in for a nourishing treatment or all-result-oriented facial and body treatments.
+                  <br>Call our consultant for information <span><a href="tel:347-227-7808">+1 347 227 7808</a></span></p></div>
+          </div>
+      </div>
+      <div class="container-fluid container-wrap">
+          <div class="row">
+              <div class="col-md-4 nails">
+                  <div class="service-card">
+                      <div class="banner-image"><div class="overlay"><h1>Nail Services</h1></div></div>
+                      
+                      <div class="service-content">
+                          <p>
+                              A holistic facial relax, improve the texture of the skin, increase circulation and encourage rejuvenation and cellular activity.
+                          </p>
+                          <button class="find-more">Show Menu</button>
+                          <ul>
+                              <li>Manicure</li>
+                              <li>French Manicure</li>
+                              <li>Glue Manicure</li>
+                              <li>Acryilic Nails</li>
+                              <li>Acryilic Tips</li>
+                              <li>Silk Wraps</li>
+                              <li>Silk Tips</li>
+                              <li>Silk Extensions</li>
+                              <li>Permanent French</li>
+                              <li>Permanent French</li>
+                              <li>Fill In</li>
+                              <li>Polish Change</li>
+                              <li>French Polish Change</li>
+                              <li>Child Manicure (Upto 11 Years Old)</li>
+                              <li>Soak Off Powder</li>
+                              <li>Gel Color</li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4 pedicure">
+                  <div class="service-card">
+                      <div class="banner-image"><div class="overlay"><h1>Pedicure</h1></div></div>
+                      
+                      <div class="service-content">
+                          <p>
+                              A holistic facial relax, improve the texture of the skin, increase circulation and encourage rejuvenation and cellular activity.
+                          </p>
+                          <button class="find-more">Show Menu</button>
+                          <ul>
+                              <li>Pedicure</li>
+                              <li>French Pedicure</li>
+                              <li>Spa Pedicure</li>
+                              <li>Me! Bath Pedicure</li>
+                              <li>Pedi Bliss Pedicure</li>
+                              <li>Polish Change</li>
+                              <li>Child Pedicure (Upto 11 Years Old)</li>
+                              <li>Manicure / Pedicure</li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4 waxing">
+                  <div class="service-card">
+                      <div class="banner-image"><div class="overlay"><h1>Waxing</h1></div></div>
+                      
+                      <div class="service-content">
+                          <p>
+                              A holistic facial relax, improve the texture of the skin, increase circulation and encourage rejuvenation and cellular activity.
+                          </p>
+                          <button class="find-more">Show Menu</button>
+                          <ul>
+                              <li>Arms(Full)</li>
+                              <li>Arms(Half)</li>
+                              <li>Bikini</li>
+                              <li>Brazilian</li>
+                              <li>Cheeks</li>
+                              <li>Chin</li>
+                              <li>Eyebrows</li>
+                              <li>Eyebrows(tweezing)</li>
+                              <li>Face</li>
+                              <li>Face w/Eyebrows</li>
+                              <li>Legs(Full)</li>
+                              <li>Legs(Lower)</li>
+                              <li>Legs(Upper)</li>
+                              <li>Legs and Bikini</li>
+                              <li>Lips</li>
+                              <li>Neck</li>
+                              <li>Underarm</li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-4 threading">
+                  <div class="service-card">
+                      <div class="banner-image"><div class="overlay"><h1>Threading</h1></div></div>
+                      
+                      <div class="service-content">
+                          <p>
+                              A holistic facial relax, improve the texture of the skin, increase circulation and encourage rejuvenation and cellular activity.
+                          </p>
+                          <button class="find-more">Show Menu</button>
+                          <ul>
+                              <li>Eyebrows</li>
+                              <li>Chin</li>
+                              <li>Lip</li>
+                              <li>Full Face</li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4 massage">
+                  <div class="service-card">
+                      <div class="banner-image"><div class="overlay"><h1>Massage</h1></div></div>
+                      
+                      <div class="service-content">
+                          <p>
+                              A holistic facial relax, improve the texture of the skin, increase circulation and encourage rejuvenation and cellular activity.
+                          </p>
+                          <button class="find-more">Show Menu</button>
+                          <ul>
+                              <li>Swedish (60/90min)</li>
+                              <li>Amroatherapy (60/90min)</li>
+                              <li>Deep Tissue (60/90min)</li>
+                              <li>Hot Stone (60/90min)</li>
+                              <li>Ultimate (60/90min)</li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4 facial">
+                  <div class="service-card">
+                      <div class="banner-image"><div class="overlay"><h1>Facial Services</h1></div></div>
+                      
+                      <div class="service-content">
+                          <p>
+                              A holistic facial relax, improve the texture of the skin, increase circulation and encourage rejuvenation and cellular activity.
+                          </p>
+                          <button class="find-more">Show Menu</button>
+                          <ul>
+                              <li>European Facial</li>
+                              <li>Hydrating Treatment</li>
+                              <li>Oil Control Treatment</li>
+                              <li>Sensitive Control Facial</li>
+                              <li>Teen Facial(12-15 Years Old)</li>
+                              <li>Anti-Bacterial Treatment</li>
+                              <li>Anti-Aging Treatment</li>
+                              <li>Back Facial</li>
+                              <li>Eye-Countour</li>
+                              <li>Facial Series - (6 sessions)</li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      <!--Footer Section-->
+      <section class="footer">
+          <div class="footer-center">
+              <div class="footer-center">
+                  <a href="https://www.google.com/maps/place/Mt+Everest+4th+Nails+%26+Spa/@40.7047249,-73.8980206,17z/data=!3m1!4b1!4m5!3m4!1s0x89c25e823b8c923f:0xd824defd0d6a81bf!8m2!3d40.7047249!4d-73.8958319" target="_blank">68-27 Fresh Pond Road. Ridgewood, NY 11385</a>
+                  <a href="mailto:info@mteverest4th.com">info@mteverest4th.com</a>
+                  <a href="tel:347-227-7808">+1 347 227 7808</a>
+                  <a class="bottom">Mt. Everest 4th Nails &amp; Salon &copy; 2019 | All Rights Reserved</a>
+              </div>
+          </div>   
+      </section>
+      
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <script>
+          $(window).scroll(function() {
+              if ($(this).scrollTop()>400) {
+                  $('header').addClass("headerFixed")
+                  $('#topScroll').fadeIn();
+              } else {
+                  $('header').removeClass("headerFixed")
+                  $('#topScroll').fadeOut();
+              }
+          })
+          $("#topScroll").click(function() {
+              $("html, body").animate({ scrollTop: 0 }, "slow")
+              return false
+          })
+          $(".open-menu").click(function() {
+              $(".mobile-nav").fadeIn(200)
+          })
+          $(".close-menu").click(function() {
+              $(".mobile-nav").fadeOut(200)
+          })
+
+          $(".find-more").click(function (e) {
+              $(this).next().toggle();
+//              $(this,"ul").toggle(400)
+              $(this).text(function(i, v){
+                  return v === 'Show Menu' ? 'Hide' : 'Show Menu' 
+              })
+          });
+          
+      </script>
+  </body>
+</html>
